@@ -1,0 +1,20 @@
+As a registered user,
+I need to reset my password if I forget it,
+So that I can regain access to my account without contacting support.
+
+Acceptance Criteria (Gherkin syntax):
+Given I am on the login page,
+When I click on the "Forgot Password" link,
+Then I should be taken to a page to enter my email address.
+
+Given I have entered a valid registered email,
+When I submit the form,
+Then I should receive an email with a reset link.
+
+Given I click the link in my email,
+When I open the reset password page,
+Then I should be able to set a new password.
+
+Given I submit a new valid password,
+When the form is accepted,
+Then I should be redirected to the login page with a confirmation message.
